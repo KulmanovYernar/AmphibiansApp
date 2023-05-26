@@ -40,7 +40,7 @@ private val retrofit = Retrofit.Builder()
 interface AmphibianApiService {
     // TODO: Declare a suspended function to get the list of amphibians
     @GET("Amphibians")
-    suspend fun getAmphibians()
+    suspend fun getAmphibians():List<Amphibian>
 }
 
 // TODO: Create an object that provides a lazy-initialized retrofit service
